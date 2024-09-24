@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+  }
+  
+  body {
+    background-image: url("/assets/backgound-visage.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura */
+    z-index: 1;
+    pointer-events: none; /* Permite clicar nos elementos sob a sobreposição */
+  }
+  
+  header {
+    background: transparent;
+    text-align: right;
+    padding: 20px;
+    width: 100%; /* Ajustado para ocupar 100% da largura da tela */
+    box-sizing: border-box; /* Garante que padding não afete a largura */
+    position: relative;
+    z-index: 2; /* Mantém o header acima da sobreposição */
+  }
+  
+  .nav-link {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 25px;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: rgb(202, 201, 201);
+    font-size: 25px;
+  }
+  
+  .nav-link:active {
+    color: rgb(202, 201, 201);
+    font-size: 25px;
+  }
+  
+  .yellow-button {
+    background-color: #fbb034;
+    color: black;
+    font-weight: bold;
+    height: 45px;
+    width: 136px;
+    margin: 0 50px 0 25px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .yellow-button:hover {
+    background-color: #925b03;
+  }
+  
+  .yellow-button:active {
+    background-color: #422901;
+  }
+  
+  .yellow-button-2 {
+    margin-top: 4rem;
+    margin-left: 1px;
+  }
+  
+  .transparent-button {
+    background-color: transparent;
+    color: white;
+    height: 45px;
+    width: 136px;
+    margin: 0 50px 0 25px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .transparent-button:hover {
+    background-color: #9a9a9a;
+  }
+  
+  .transparent-button:active {
+    background-color: #4e4e4e;
+  }
+  
+  .wrapper {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 35px;
+    width: 528px;
+    z-index: 2; /* Colocado acima da sobreposição */
+  }
+  
+  h3 {
+    color: #fbb034;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  p {
+    color: #9a9a9a;
+    font-size: 20px;
+    font-weight: 300;
+    width: 25rem;
+  }
+  
